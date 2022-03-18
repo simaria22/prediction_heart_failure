@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<time &le; 75.632<br/>gini = 0.5<br/>samples = 276<br/>value = [142, 134]<br/>class = 1.0>, fillcolor="#fef8f4"] ;
+1 [label=<serum_creatinine &le; 0.908<br/>gini = 0.198<br/>samples = 108<br/>value = [12, 96]<br/>class = 0.0>, fillcolor="#52a9e8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<ejection_fraction &le; 39.0<br/>gini = 0.486<br/>samples = 12<br/>value = [5, 7]<br/>class = 0.0>, fillcolor="#c6e3f8"] ;
+1 -> 2 ;
+3 [label=<gini = 0.346<br/>samples = 9<br/>value = [2, 7]<br/>class = 0.0>, fillcolor="#72b9ec"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 3<br/>value = [3, 0]<br/>class = 1.0>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<ejection_fraction &le; 72.5<br/>gini = 0.135<br/>samples = 96<br/>value = [7, 89]<br/>class = 0.0>, fillcolor="#49a5e7"] ;
+1 -> 5 ;
+6 [label=<gini = 0.118<br/>samples = 95<br/>value = [6, 89]<br/>class = 0.0>, fillcolor="#46a4e7"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = 1.0>, fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label=<serum_creatinine &le; 1.426<br/>gini = 0.35<br/>samples = 168<br/>value = [130, 38]<br/>class = 1.0>, fillcolor="#eda673"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<ejection_fraction &le; 27.5<br/>gini = 0.18<br/>samples = 130<br/>value = [117, 13]<br/>class = 1.0>, fillcolor="#e88f4f"] ;
+8 -> 9 ;
+10 [label=<gini = 0.499<br/>samples = 19<br/>value = [10, 9]<br/>class = 1.0>, fillcolor="#fcf2eb"] ;
+9 -> 10 ;
+11 [label=<gini = 0.069<br/>samples = 111<br/>value = [107, 4]<br/>class = 1.0>, fillcolor="#e68640"] ;
+9 -> 11 ;
+12 [label=<time &le; 205.97<br/>gini = 0.45<br/>samples = 38<br/>value = [13, 25]<br/>class = 0.0>, fillcolor="#a0d0f3"] ;
+8 -> 12 ;
+13 [label=<gini = 0.383<br/>samples = 31<br/>value = [8, 23]<br/>class = 0.0>, fillcolor="#7ebfee"] ;
+12 -> 13 ;
+14 [label=<gini = 0.408<br/>samples = 7<br/>value = [5, 2]<br/>class = 1.0>, fillcolor="#efb388"] ;
+12 -> 14 ;
+}
